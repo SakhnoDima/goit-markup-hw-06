@@ -503,7 +503,7 @@ span {
 }
 .footer.footer-botton .container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 .footer-logo {
   color: #f4f4fd;
@@ -584,6 +584,54 @@ span {
 .social-footer .social-link:hover,
 .social-footer .social-link:focus {
   background-color: #31d0aa;
+}
+/*  <---- INPUT FORM ---> */
+.footer-form:last-child {
+  margin-left: 80px;
+}
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+  height: 80px;
+  width: 453px;
+  border-radius: 4px;
+}
+.footer-lable {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--primary-bg-color);
+}
+.footer-input {
+  margin-top: 16px;
+  display: block;
+  height: 40px;
+  width: 264px;
+  border-radius: 4px;
+
+  border: 1px solid #ffffff;
+
+  box-shadow: 0px 4px 4px 0px #00000026;
+}
+.button-style {
+  margin-left: 24px;
+  width: 165px;
+  height: 40px;
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
+.icon-plane {
+  fill: #ffffff;
 }
 /* <---  portfolio ---> */
 .logo-span {
