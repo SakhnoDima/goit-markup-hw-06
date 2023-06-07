@@ -44,7 +44,7 @@ span {
   color: var(--title-text-color);
 }
 .button-line {
-  position: fixed;
+  /* position: fixed;     < ====  закрепляет еадер      */
   width: 100%;
   top: 0;
   left: 0;
@@ -766,6 +766,8 @@ h2.title-text {
 
 /*  <----    модальное окно  ---->  */
 .modal-header {
+  padding: 0;
+  margin: 0;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -791,6 +793,7 @@ h2.title-text {
 }
 .modal {
   position: absolute;
+  padding: 72px 24px 24px 24px;
 
   top: 50%;
   left: 50%;
@@ -841,7 +844,27 @@ h2.title-text {
   border: none;
   fill: #ffffff;
 }
+.modal-form {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-input {
+  display: flex;
+  flex-direction: column;
 
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-align: left;
+
+  outline: 1px solid red;
+}
+.modail-input:last-child {
+  display: inline;
+}
 .madal-buttom {
   height: 56px;
   width: 169px;
