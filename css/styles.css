@@ -583,6 +583,7 @@ span {
 }
 /*  <---- INPUT FORM ---> */
 .footer-form:last-child {
+  display: block;
   margin-left: 80px;
 }
 .footer-form {
@@ -592,13 +593,18 @@ span {
   width: 453px;
   border-radius: 4px;
 }
-.footer-lable {
+.footer-form-input {
+  display: flex;
+}
+.text-inout-futer {
+  line-height: 1.5;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
+  /* line-height: 24px; */
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--primary-bg-color);
+  margin-bottom: 16px;
 }
 .footer-input {
   font-family: Roboto;
@@ -610,7 +616,6 @@ span {
   resize: none;
 
   display: block;
-  margin-top: 16px;
   height: 40px;
   width: 264px;
   border-radius: 4px;
