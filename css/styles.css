@@ -862,6 +862,7 @@ h2.title-text {
 .modal-input {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   font-family: Roboto;
   font-size: 12px;
@@ -870,7 +871,7 @@ h2.title-text {
   letter-spacing: 0.04em;
   text-align: left;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .modal-input:last-child {
   margin: 0px;
@@ -880,7 +881,7 @@ h2.title-text {
 }
 .modal-form .modal-input input {
   border-radius: 4px;
-  padding: 8px 16px;
+  padding-left: 38px;
   height: 40px;
 }
 .modal-form .modal-input textarea {
@@ -925,5 +926,20 @@ h2.title-text {
 .madal-buttom:hover,
 .madal-buttom:focus {
   background-color: var(--pressed-color);
+}
+/*  <--- ICON  ---> */
+input {
+  outline: none;
+}
+.input-position {
+  position: absolute;
+  top: 29px;
+  left: 16px;
+}
+input:focus {
+  border: 1px solid var(--primary-color);
+}
+.input-form:focus ~ .input-position {
+  fill: var(--primary-color);
 }
 /* ----------------------------------------- */
