@@ -5,6 +5,8 @@
   --primary-color: #4d5ae5;
   --pressed-color: #404bbf;
   --unpresed-color: #f4f4fd;
+  --indent: 24px;
+  --items: 4;
 }
 body {
   background-color: var(--primary-bg-color);
@@ -12,6 +14,7 @@ body {
   list-style: none;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
+  padding: 0;
 }
 img {
   display: block;
@@ -295,8 +298,6 @@ span {
 }
 .three-title-background {
   border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 72px) / 4);
-  margin-right: 24px;
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 6px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 2px 1px 0px #2e2f4214;
@@ -377,20 +378,22 @@ span {
   color: var(--pressed-color);
 }
 .customer-flex {
-  display: flex;
   align-items: center;
   list-style: none;
   padding-left: 0px;
   margin: 0px;
-  gap: 24px;
   justify-content: center;
 }
 .customer-li {
-  width: calc((100% - 120px) / 6);
+  --items: 6;
   height: 88px;
 }
 
 /* Flex инструкции */
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
 .container.header {
   padding: 0 15px;
   display: flex;
@@ -422,23 +425,16 @@ span {
 }
 .flax.list {
   display: flex;
+  flex-wrap: wrap;
+  --items: 3;
+  gap: var(--indent);
 }
 .flax.list.cards {
+  --items: 4;
   width: auto;
-  display: flex;
   margin-right: 0;
 }
-.section-two-list {
-  margin-right: 24px;
-  width: 100%;
-}
-.section-two-list:last-child {
-  margin-right: 0px;
-}
 
-.three-title-background:last-child {
-  margin-right: 0px;
-}
 .portfolio.list {
   display: flex;
   justify-content: center;
@@ -752,9 +748,7 @@ span {
 .cards:nth-child(3n) {
   margin-right: 0px;
 }
-.cards.cards:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
+
 .container {
   margin-left: auto;
   margin-right: auto;
