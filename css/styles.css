@@ -44,7 +44,7 @@ span {
   color: var(--title-text-color);
 }
 .button-line {
-  /* position: fixed;     < ====  закрепляет еадер      */
+  /* position: fixed;     < ====  закрепляет хеадер      */
   width: 100%;
   top: 0;
   left: 0;
@@ -89,7 +89,7 @@ span {
 }
 /*  <-- активное окно синего цвета --> */
 .flax-header .link.active {
-  color: #404bbf;
+  color: (var(--pressed-color));
 }
 .flax-nav .logo.link {
   margin-right: 76px;
@@ -154,7 +154,7 @@ span {
   margin-right: auto;
   margin-left: auto;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--primary-bg-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /* SECTION-ONE */
@@ -258,7 +258,7 @@ span {
   margin-top: 0px;
 }
 .contaier-one-title img {
-  background: #f4f4fd;
+  background: var(--unpresed-color);
   border-radius: 4px;
 }
 .two-title {
@@ -266,7 +266,7 @@ span {
 }
 .section-three {
   padding: 120px 0;
-  background-color: #f4f4fd;
+  background-color: var(--unpresed-color);
 }
 .three-title {
   margin-bottom: 72px;
@@ -297,7 +297,7 @@ span {
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
   margin-right: 24px;
-  background-color: #ffffff;
+  background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 6px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 2px 1px 0px #2e2f4214;
   /*  <---инструкции переходов--->  */
@@ -373,8 +373,8 @@ span {
 }
 .customer-li .link:hover,
 .customer-li .link:focus {
-  border-color: #404bbf;
-  color: #404bbf;
+  border-color: var(--pressed-color);
+  color: var(--pressed-color);
 }
 .customer-flex {
   display: flex;
@@ -506,7 +506,7 @@ span {
   align-items: baseline;
 }
 .footer-logo {
-  color: #f4f4fd;
+  color: var(--unpresed-color);
 }
 .footer.footer-botton {
   padding: 100px 0;
@@ -638,7 +638,7 @@ span {
   line-height: 24px;
   letter-spacing: 0.04em;
 
-  color: #ffffff;
+  color: var(--primary-bg-color);
   background-color: var(--primary-color);
 }
 .button-style:hover,
@@ -647,7 +647,7 @@ span {
 }
 
 .icon-plane {
-  fill: #ffffff;
+  fill: var(--primary-bg-color);
   margin-left: 16px;
 }
 /* <---  portfolio ---> */
@@ -853,7 +853,7 @@ h2.title-text {
 .modal-bt:focus {
   background-color: var(--pressed-color);
   border: none;
-  fill: #ffffff;
+  fill: var(--primary-bg-color);
 }
 .modal-form {
   width: 360px;
@@ -885,10 +885,12 @@ h2.title-text {
   margin-bottom: 4px;
 }
 .modal-form .modal-input input {
+  border-radius: 4px;
   padding: 8px 16px;
   height: 40px;
 }
 .modal-form .modal-input textarea {
+  border-radius: 4px;
   padding: 8px 16px;
   resize: none;
 }
@@ -924,7 +926,7 @@ h2.title-text {
 
   box-shadow: 0px 4px 4px 0px #00000026;
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: var(--primary-bg-color);
 }
 .madal-buttom:hover,
 .madal-buttom:focus {
