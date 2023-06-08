@@ -453,7 +453,7 @@
         <p class="modal-header">
           Leave your contacts and we will call you back
         </p>
-        <form class="modal-form">
+        <form class="modal-form" autocomplete="off">
           <div class="modal-input">
             <label for="name">Name</label>
             <input
@@ -499,15 +499,19 @@
           </div>
         </form>
         <div class="modal-input last">
-          <input
-            id="PrivacyPolice"
-            type="checkbox"
-            name="PrivacyPolice"
-            value="yes"
-          />
-          <label for="PrivacyPolice"
-            >I accept the terms and conditions of the
-            <span> Privacy Policy</span>
+          <label class="icon-checkbox" for="PrivacyPolice">
+            <input
+              class="checkbox"
+              id="PrivacyPolice"
+              type="checkbox"
+              name="PrivacyPolice"
+              value="yes"
+            />
+            <span class="image"></span>
+            <span class="acsept">
+              I accept the terms and conditions of the
+              <span class="privacy">Privacy Policy</span>
+            </span>
           </label>
         </div>
         <button type="submit" class="madal-buttom">Send</button>

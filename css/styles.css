@@ -607,6 +607,7 @@ span {
   line-height: 24px;
   letter-spacing: 0.04em;
   text-align: left;
+  resize: none;
 
   display: block;
   margin-top: 16px;
@@ -870,8 +871,6 @@ h2.title-text {
   line-height: 14px;
   letter-spacing: 0.04em;
   text-align: left;
-
-  /* outline: 1px solid red; */
 }
 .modal-input:last-child {
   margin: 0px;
@@ -897,7 +896,9 @@ h2.title-text {
   align-items: center;
 }
 .modal-input.last label {
-  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 /* .modail-input:last-child .modail-input:last-child {
   display: inline;
@@ -928,7 +929,8 @@ h2.title-text {
   background-color: var(--pressed-color);
 }
 /*  <--- ICON  ---> */
-input {
+input,
+textarea {
   outline: none;
 }
 .input-position {
@@ -936,10 +938,48 @@ input {
   top: 29px;
   left: 16px;
 }
-input:focus {
+input:focus,
+textarea:focus {
   border: 1px solid var(--primary-color);
 }
+/*  ---------  обычная форма  ----------  
 .input-form:focus ~ .input-position {
+  fill: var(--primary-color);
+} */
+/*    ----- форма при focus-within ----- */
+.modal-input:focus-within .input-position {
   fill: var(--primary-color);
 }
 /* ----------------------------------------- */
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  position: absolute;
+}
+
+.checkbox:checked + .image {
+  background-color: var(--pressed-color);
+  background-image: url(../images/checkbox.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--pressed-color);
+  border-radius: 2px;
+}
+.image {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(46, 47, 66, 0.4);
+}
+.privacy {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
