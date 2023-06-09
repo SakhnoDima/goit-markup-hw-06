@@ -967,7 +967,7 @@ h2.title-text {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
   outline: transparent;
   border-radius: 4px;
@@ -998,6 +998,7 @@ textarea:focus {
   fill: red;
 }
 .image {
+  display: inline-flex;
   display: inline-flex;
   align-items: center;
   justify-content: center;
