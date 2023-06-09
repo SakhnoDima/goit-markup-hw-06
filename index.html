@@ -459,9 +459,8 @@
             <div class="input-position">
               <input
                 class="input-input"
-                class="input-form"
                 type="text"
-                name="name"
+                name="user-name"
                 id="user-name"
                 autofocus
               />
@@ -495,7 +494,7 @@
             </div>
           </div>
           <div class="modal-input">
-            <label for="email">Email</label>
+            <label class="label-user-name" for="email">Email</label>
             <div class="input-position">
               <input class="input-input" type="email" name="email" id="email" />
               <svg
@@ -509,33 +508,35 @@
             </div>
           </div>
           <div class="modal-input">
-            <label for="coment">Comment</label>
+            <label class="label-user-name" for=" user-comment">Comment</label>
             <textarea
+              class="text-area"
               name="comment"
-              id="coment"
+              id=" user-comment"
               cols="30"
               rows="10"
               placeholder="Text input"
             ></textarea>
           </div>
+
+          <div class="modal-input last">
+            <label class="icon-checkbox" for="PrivacyPolice">
+              <input
+                class="checkbox"
+                id="PrivacyPolice"
+                type="checkbox"
+                name="PrivacyPolice"
+                value="yes"
+              />
+              <span class="image"></span>
+              <span class="acsept">
+                I accept the terms and conditions of the
+                <span class="privacy">Privacy Policy</span>
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="madal-buttom">Send</button>
         </form>
-        <div class="modal-input last">
-          <label class="icon-checkbox" for="PrivacyPolice">
-            <input
-              class="checkbox"
-              id="PrivacyPolice"
-              type="checkbox"
-              name="PrivacyPolice"
-              value="yes"
-            />
-            <span class="image"></span>
-            <span class="acsept">
-              I accept the terms and conditions of the
-              <span class="privacy">Privacy Policy</span>
-            </span>
-          </label>
-        </div>
-        <button type="submit" class="madal-buttom">Send</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
