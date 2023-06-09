@@ -989,12 +989,12 @@ textarea:focus {
   fill: var(--primary-color);
 }
 /* ----------------------------------------- */
-.icon-checkbox {
+/*  -- ????   .icon-checkbox {
   line-height: 1.17;
   color: var(--input-modal-color);
-}
+} */
 
-.visually-hidde:checked ~ .image {
+.visually-hidden:checked + .icon-checkbox {
   background-color: red;
 }
 .image {
@@ -1010,7 +1010,6 @@ textarea:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #31d0aa;
 }
 .privacy-li {
   color: var(--primary-color);
