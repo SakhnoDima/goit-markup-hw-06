@@ -988,9 +988,6 @@ textarea:focus {
 .icon-checkbox {
   line-height: 1.17;
   color: var(--input-modal-color);
-
-  position: relative;
-  padding-left: 24px;
 }
 
 .visually-hidden:checked + .icon-checkbox > .image {
@@ -1012,8 +1009,7 @@ textarea:focus {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  position: absolute;
-  left: 0;
+  margin-right: 8px;
 }
 .privacy-li {
   color: var(--primary-color);
