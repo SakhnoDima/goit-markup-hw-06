@@ -1000,7 +1000,7 @@ textarea:focus {
 .visually-hidden:checked + .icon-checkbox > .image {
   background-color: var(--pressed-color);
   border: none;
-  fill: var(--primary-color);
+  fill: var(--unpresed-color);
 }
 .image {
   display: inline-flex;
