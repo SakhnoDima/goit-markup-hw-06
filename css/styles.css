@@ -5,6 +5,7 @@
   --primary-color: #4d5ae5;
   --pressed-color: #404bbf;
   --unpresed-color: #f4f4fd;
+  --input-modal-color: #8e8f99;
   --indent: 24px;
   --items: 4;
 }
@@ -791,6 +792,8 @@ h2.title-text {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 16px;
 }
 .backdrop {
   position: fixed;
@@ -864,11 +867,9 @@ h2.title-text {
   width: 360px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 16px;
 
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  /* display: flex;
+  flex-direction: column; */
 }
 .modal-input {
   display: flex;
@@ -881,6 +882,12 @@ h2.title-text {
   line-height: 14px;
   letter-spacing: 0.04em;
   text-align: left;
+
+  margin-bottom: 8px;
+}
+.label-user-name {
+  line-height: 1.17;
+  color: var(--input-modal-color);
 }
 .modal-input:last-child {
   margin: 0px;
@@ -944,9 +951,6 @@ textarea {
   outline: none;
 }
 .input-position {
-  position: absolute;
-  top: 29px;
-  left: 16px;
 }
 input:focus,
 textarea:focus {
