@@ -912,11 +912,7 @@ h2.title-text {
   flex-direction: row;
   align-items: center;
 }
-.modal-input.last label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+
 /* .modail-input:last-child .modail-input:last-child {
   display: inline;
 } */
