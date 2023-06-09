@@ -895,6 +895,13 @@ h2.title-text {
 .modal-form .modal-input label {
   margin-bottom: 4px;
 }
+.svg-posotion {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* .modal-form .modal-input input {
   border-radius: 4px;
   padding-left: 38px;
