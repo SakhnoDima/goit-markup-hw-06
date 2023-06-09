@@ -626,7 +626,7 @@ span {
   border-radius: 4px;
   padding-left: 16px;
   border: 1px solid #ffffff;
-  background-color: var(--title-text-color);
+  background-color: transparent;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .button-style {
@@ -634,16 +634,18 @@ span {
   justify-content: center;
   align-items: center;
 
-  width: 165px;
+  min-width: 165px;
   height: 40px;
+  border: none;
   border-radius: 4px;
 
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.04em;
 
+  cursor: pointer;
   color: var(--primary-bg-color);
   background-color: var(--primary-color);
 }
@@ -803,7 +805,6 @@ h2.title-text {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-
   visibility: hidden;
 }
 .modal {
