@@ -999,7 +999,6 @@ textarea:focus {
 }
 .image {
   display: inline-flex;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
