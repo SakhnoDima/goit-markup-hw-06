@@ -989,10 +989,10 @@ textarea:focus {
   fill: var(--primary-color);
 }
 /* ----------------------------------------- */
-/*  -- ????   .icon-checkbox {
+.icon-checkbox {
   line-height: 1.17;
   color: var(--input-modal-color);
-} */
+}
 
 .visually-hidden:checked + .icon-checkbox {
   background-color: red;
