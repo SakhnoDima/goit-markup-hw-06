@@ -508,11 +508,11 @@
             </div>
           </div>
           <div class="modal-input">
-            <label class="label-user-name" for=" user-comment">Comment</label>
+            <label class="label-user-name" for="user-comment">Comment</label>
             <textarea
               class="text-area"
-              name="comment"
-              id=" user-comment"
+              name="user-comment"
+              id="user-comment"
               cols="30"
               rows="10"
               placeholder="Text input"
@@ -520,17 +520,21 @@
           </div>
           <div class="modal-input last">
             <input
-              class="checkbox"
+              class="visually-hidden"
               id="user-privacy"
               type="checkbox"
               name="user-privacy"
-              value="tru"
+              value="true"
             />
-            <label class="icon-checkbox" for="PrivacyPolice">
-              <span class="image"></span>
+            <label class="icon-checkbox" for="user-privacy">
+              <span class="image">
+                <svg class="svg-icon" width="10" height="8">
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
+              </span>
               <span class="acsept">
                 I accept the terms and conditions of the
-                <span class="privacy">Privacy Policy</span>
+                <span><a class="privacy-li">Privacy Policy</a></span>
               </span>
             </label>
           </div>

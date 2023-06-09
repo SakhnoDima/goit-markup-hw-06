@@ -882,6 +882,9 @@ h2.title-text {
 
   margin-bottom: 8px;
 }
+.modal-input:nth-child(4) {
+  margin-bottom: 16px;
+}
 .label-user-name {
   line-height: 1.17;
   color: var(--input-modal-color);
@@ -919,12 +922,12 @@ h2.title-text {
 } */
 .madal-buttom {
   height: 56px;
-  width: 169px;
+  min-width: 169px;
 
   display: block;
   margin: 0px auto;
 
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -933,10 +936,13 @@ h2.title-text {
 
   border-radius: 4px;
   padding: 16px 32px 16px 32px;
+  border: none;
 
   box-shadow: 0px 4px 4px 0px #00000026;
   background-color: var(--primary-color);
   color: var(--primary-bg-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .madal-buttom:hover,
 .madal-buttom:focus {
@@ -983,35 +989,29 @@ textarea:focus {
   fill: var(--primary-color);
 }
 /* ----------------------------------------- */
-.checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  position: absolute;
+.icon-checkbox {
+  line-height: 1.17;
+  color: var(--input-modal-color);
 }
 
-.checkbox:checked + .image {
-  background-color: var(--pressed-color);
-  background-image: url(../images/checkbox.svg);
-  background-size: contain;
-  background-origin: border-box;
-  border-color: var(--pressed-color);
-  border-radius: 2px;
+.icon-checkbox:checked + .image {
+  fill: red;
 }
 .image {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
   width: 16px;
   height: 16px;
-  border: 2px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.privacy {
+.privacy-li {
   color: var(--primary-color);
   text-decoration: underline;
 }
