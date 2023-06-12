@@ -439,7 +439,7 @@ span {
 .portfolio.list {
   display: flex;
   justify-content: center;
-  padding-top: 96px;
+  padding-top: 100px;
   margin-bottom: 72px;
 }
 .prof-but {
@@ -664,7 +664,6 @@ span {
   color: var(--title-text-color);
 }
 .portfolio-section {
-  padding-top: 96px;
   padding-bottom: 120px;
 }
 .portfolio-title {
@@ -700,7 +699,7 @@ span {
   margin-left: 16px;
 }
 .text-portfolio {
-  margin-left: 16px;
+  margin: 0 0 0 16px;
   color: var(--text-color);
 }
 .portfolio .text-portfolio {
@@ -986,6 +985,8 @@ textarea:focus {
 }
 /* ----------------------------------------- */
 .icon-checkbox {
+  display: flex;
+  align-items: center;
   line-height: 1.17;
   color: var(--input-modal-color);
 }
@@ -1011,6 +1012,7 @@ textarea:focus {
   margin-right: 8px;
 }
 .privacy-li {
+  padding-left: 3px;
   color: var(--primary-color);
   text-decoration: underline;
 }
