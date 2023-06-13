@@ -892,6 +892,9 @@ h2.title-text {
 .modal-form .modal-input label {
   margin-bottom: 4px;
 }
+.modal-form .modal-input label:last-child {
+  margin-bottom: 0px;
+}
 .svg-posotion {
   position: absolute;
   top: 50%;
@@ -985,7 +988,7 @@ textarea:focus {
 }
 /* ----------------------------------------- */
 .icon-checkbox {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   line-height: 1.17;
   color: var(--input-modal-color);
